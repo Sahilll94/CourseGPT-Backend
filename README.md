@@ -23,3 +23,6 @@ This endpoint is used to generate a lesson based on a given topic. You send a JS
 }
 ```
 The user can send the topics in JSON format with key as topic and value as the question that they want to ask.
+
+### About the AI Model
+#### We have used OpenRouter which is the unified interface for LLMs where I have selected OpenAI ```gpt-4o-mini``` model for generating the educational content.
