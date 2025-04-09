@@ -23,7 +23,7 @@ This endpoint is used to generate a lesson based on a given topic. You send a JS
 }
 ```
 
-The user can send the topics in JSON format with key as topic and value as the question that they want to ask.
+The user can send the topics in JSON format as body with key as topic and value as the question that they want to ask.
 
 ![Overview of Postman](/postman.png)
 
