@@ -9,6 +9,14 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.use(
+    cors({
+      origin: "https://coursegpt.sahilfolio.live",
+      methods: ["GET", "POST"],
+      credentials: true,
+    })
+  );
+
 app.use("/api", aiRoutes);
 
 const PORT = process.env.PORT || 5000;

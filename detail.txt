@@ -1,0 +1,2 @@
+backend route -  POST https://coursegpt-backend.onrender.com/api/generate-lesson with body key - content and value - the question.
+ 
