@@ -1,3 +1,5 @@
+module.exports = buildPrompt;
+
 const buildPrompt = (topic) => {
   return `
 Create a detailed course lesson on the topic: **"${topic}"**
@@ -28,6 +30,8 @@ Friendly yet educational.
 Keep formatting readable using headings and bullet points. Write each section in a descriptive and elaborative manner.
 `;
 };
+
+  module.exports = buildPrompt;
 
 // module.exports = buildPrompt;
 
