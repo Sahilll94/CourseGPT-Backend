@@ -1,7 +1,5 @@
-module.exports = buildPrompt;
-
 const buildPrompt = (topic) => {
-    return 
+    return `
   Create a detailed course lesson on: "${topic}"
   
   Structure:
@@ -11,8 +9,9 @@ const buildPrompt = (topic) => {
   4. Activities/Examples
   5. Resources
   
-  The tone should be friendly yet educational . Keep formatting readable with bullet points or sub-headings and keep each section descriptive and in elaborative manner.
-  ;
+  The tone should be friendly yet educational. Keep formatting readable with bullet points or sub-headings.
+  `;
   };
   
   module.exports = buildPrompt;
+  
