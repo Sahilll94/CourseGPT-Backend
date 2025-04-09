@@ -25,6 +25,8 @@ This endpoint is used to generate a lesson based on a given topic. You send a JS
 
 The user can send the topics in JSON format with key as topic and value as the question that they want to ask.
 
+![Overview of Postman](/postman.png)
+
 #### NOTE : AS WE HAVE USED RENDER TO HOST THE BACKEND, THEREFORE, WE ARE USING FREE SERVICE OF RENDER WHICH WILL LET MY SERVER DOWN IF NO ACTIVITY IS DETECTED AND TO SPIN IT UP, IT WILL TAKE 50 seconds. Kindly wait for a few minutes while hitting the server.
 
 ### About the AI Model
