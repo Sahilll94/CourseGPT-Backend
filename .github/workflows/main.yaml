@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: coursegpt-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+  - type: cron
+    name: keep-backend-alive
+    schedule: "*/15 * * * *"
+    command: curl https://coursegpt-backend.onrender.com/api/ping
+    envVars: []
