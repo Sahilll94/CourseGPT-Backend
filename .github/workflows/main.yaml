@@ -1,16 +1,14 @@
-services:
-  - type: web
-    name: coursegpt-backend
-    env: node
-    plan: free
-    buildCommand: npm install
-    startCommand: node server.js
-    envVars:
-      - key: NODE_ENV
-        value: production
+name: Keep Render Backend Alive
 
-  - type: cron
-    name: keep-backend-alive
-    schedule: "*/15 * * * *"
-    command: curl https://coursegpt-backend.onrender.com/api/ping
-    envVars: []
+on:
+  schedule:
+    - cron: "*/15 * * * *" # every 15 minutes
+  workflow_dispatch: # allow manual trigger
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send ping to backend
+        run: curl -s https://coursegpt-backend.onrender.com/api/ping
